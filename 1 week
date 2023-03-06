@@ -18,3 +18,16 @@ Ad=input("Adınızı Giriniz: ")
 Soyad=input("Soyadınız Giriniz: ")
 Adres=input("Adresinizi Giriniz: ")
 print ("\n",Ad,"\n",Soyad,"\n",Adres,"\n","*"*len(Adres))
+
+4.Sorunun Cevabı
+
+
+
+
+
+
+
+5.Sorunun Cevabı
+Ad=input("Adınızı Giriniz: ")
+Soyad=input("Soyadınız Giriniz: ")
+print( "**"*len(Ad+Soyad),"\n**",Ad,Soyad,"**\n","**"*len(Ad+Soyad))
