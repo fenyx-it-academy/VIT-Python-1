@@ -19,12 +19,13 @@ Soyad=input("Soyadınız Giriniz: ")
 Adres=input("Adresinizi Giriniz: ")
 print ("\n",Ad,"\n",Soyad,"\n",Adres,"\n","*"*len(Adres))
 
+
 4.Sorunun Cevabı
-
-
-
-
-
+GirilenSn=int(input("Saniye Giriniz: "))
+Sn=GirilenSn%60
+Dk=(GirilenSn//60)%60
+Saat=(GirilenSn//60)//60
+print("Girilen Saniyenin Karşılığı:",Saat,"Saat",Dk,"Dakika",Sn,"Saniye")
 
 
 5.Sorunun Cevabı
