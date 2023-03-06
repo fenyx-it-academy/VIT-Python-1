@@ -11,3 +11,10 @@ print("-"*len(Baslik))
 Ad=input("Adınızı Giriniz")
 Soyad=input("Soyadınız Giriniz")
 print ("Merhaba",Soyad,Ad,"Hosgeldiniz",sep="   ")
+
+
+3.Sorunun Cevabı
+Ad=input("Adınızı Giriniz: ")
+Soyad=input("Soyadınız Giriniz: ")
+Adres=input("Adresinizi Giriniz: ")
+print ("\n",Ad,"\n",Soyad,"\n",Adres,"\n","*"*len(Adres))
