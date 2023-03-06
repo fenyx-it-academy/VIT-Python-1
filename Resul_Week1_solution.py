@@ -37,3 +37,15 @@ print("{} Saniye\n {} Gun,\n {} Saat,\n {} Dakika,\n {} Saniyedir." .format(
     SaniyeDegeri, Gun, Saat, Dakika, Saniye))
 
 #Soru 5 cevabi
+Ad = input("Adiniz:")
+Soyad = input("Soyadiniz:")
+Yazi = " {} {} " .format(Ad, Soyad)
+print("I", '*'*len(Yazi), "I", sep="")
+print("I", ' '*len(Yazi), "I", sep="")
+print("I", ' '*len(Yazi), "I", sep="")
+print("I", Ad, Soyad, "I", sep=" ")
+print("I", ' '*len(Yazi), "I", sep="")
+print("I", ' '*len(Yazi), "I", sep="")
+print("I", '*'*len(Yazi), "I", sep="")
+
+#Soru 6 cevabi
