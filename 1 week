@@ -5,3 +5,9 @@ DaiAlan=3.14*(YariCap*YariCap)
 Baslik="Dairenin Alanı"
 print(Baslik ,DaiAlan,"dır")
 print("-"*len(Baslik))
+
+2.Sorunun Cevabı
+
+Ad=input("Adınızı Giriniz")
+Soyad=input("Soyadınız Giriniz")
+print ("Merhaba",Soyad,Ad,"Hosgeldiniz",sep="   ")
