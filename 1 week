@@ -1,0 +1,7 @@
+1. Sorunun Cevabı
+
+YariCap=int(input("Dairenin Yarı Çapını Giriniz"))
+DaiAlan=3.14*(YariCap*YariCap)
+Baslik="Dairenin Alanı"
+print(Baslik ,DaiAlan,"dır")
+print("-"*len(Baslik))
