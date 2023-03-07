@@ -1,39 +1,50 @@
 1. Sorunun Cevabı
 
-YariCap=int(input("Dairenin Yarı Çapını Giriniz"))
-DaiAlan=3.14*(YariCap*YariCap)
-Baslik="Dairenin Alanı"
-print(Baslik ,DaiAlan,"dır")
+YariCap=int(input("Dairenin Yarı Çapını Giriniz:  "))
+DaiAlan=3.14159*(YariCap*YariCap)
+Baslik="Dairenin Alanı:  "+str(DaiAlan)+" ,dır!"
+print(Baslik)
 print("-"*len(Baslik))
+-----------------------------------
 
 2.Sorunun Cevabı
 
 Ad=input("Adınızı Giriniz")
 Soyad=input("Soyadınız Giriniz")
 print ("Merhaba",Soyad,Ad,"Hosgeldiniz",sep="   ")
-
+--------------------------------------
 
 3.Sorunun Cevabı
+
 Ad=input("Adınızı Giriniz: ")
 Soyad=input("Soyadınız Giriniz: ")
 Adres=input("Adresinizi Giriniz: ")
 print ("\n",Ad,"\n",Soyad,"\n",Adres,"\n","*"*len(Adres))
-
+----------------------------------------------------------
 
 4.Sorunun Cevabı
-GirilenSn=int(input("Saniye Giriniz: "))
-Sn=GirilenSn%60
-Dk=(GirilenSn//60)%60
-Saat=(GirilenSn//60)//60
-print("Girilen Saniyenin Karşılığı:",Saat,"Saat",Dk,"Dakika",Sn,"Saniye")
 
+GirilenSn=int(input("Saniye Giriniz: "))
+gun=GirilenSn//86400
+saat=(GirilenSn%86400)//3600
+dk=((GirilenSn%86400)%3600)//60
+sn=((GirilenSn%86400)%3600)%60
+print("Girilen Saniyenin Karşılığı:",gun,"Gün",saat,"Saat",dk,"Dakika",sn,"Saniye")
+------------------------------------------------------------------------
 
 5.Sorunun Cevabı
-Ad=input("Adınızı Giriniz: ")
-Soyad=input("Soyadınız Giriniz: ")
-print( "**"*len(Ad+Soyad),"\n**",Ad,Soyad,"**\n","**"*len(Ad+Soyad))
+
+ad=input('Adınızı Giriniz: ')
+print('|','*'*len(ad),'|')
+print('|',' '*len(ad),'|')
+print('|',ad,'|')
+print('|',' '*len(ad),'|')
+print('|','*'*len(ad),'|')
+--------------------------------------------------
+
 
 6.Sorunun Cevab
+
 Ad=input("Merhaba Adınız Nedir :")
 print("Hosgeldin    ",Ad)
 Soyad=input("Soyadın nedir  :")
