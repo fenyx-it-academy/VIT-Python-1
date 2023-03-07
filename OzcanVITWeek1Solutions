@@ -49,6 +49,8 @@ print(rectangle)
 
 #Solution 6
 
+# We are asking six questions and get the answers with respect to these answers
+
 print("Merhaba, size birkaç soru soracağım. Lütfen dürüst cevaplar verin.")
 name = input("Adınız nedir? ")
 print("Merhaba " + name + "!")
