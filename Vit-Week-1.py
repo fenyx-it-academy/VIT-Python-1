@@ -46,15 +46,14 @@ print('*'*len(adres), sep='')
 saniye = int(input('Lutfen Saniye Giriniz: '))
 # dakika saat ve gunu formulize ediyoruz
 gun = saniye // 86400
-saat = saniye // 3600
-saniye = saniye % 3600
-dakika = saniye // 60
-sonSaniye = saniye % 60
+saat = (saniye % 86400) // 3600
+dakika = (saniye % 3600) // 60
+saniye = saniye % 60
 # aldigimiz inputu ilgili formulizasyonlar sonucunda sonuc adli degiskene hesaplamalar yaparak atiyoruz.
 # {} ile .format fonksiyonunu kullaniyoruz. boylece gelendegeri istedigimiz noktalara yazdirabiliriz.
 # format icindeki her birimi int a cevirerek cikan sonucun float olmasini engellemis oluyoruz
-sonuc = ("Girdiginiz {} Saniye : {} Gun,  {} Saat, {} Dakika ve {} Saniye  olarak hesaplanmistir".format(
-    saniye, int(gun), int(saat), int(dakika), int(sonSaniye)))
+sonuc = ("Girdiginiz Saniye : {} Gun,  {} Saat, {} Dakika ve {} Saniye  olarak hesaplanmistir".format(
+    int(gun), int(saat), int(dakika), int(saniye)))
 print(sonuc)
 
 ###########################################################################
