@@ -82,15 +82,15 @@ print('|', '*'*len(sonuc), "|")
 # COZUM-6 ########
 
 # KULLANICIYA SORU SORUP CEVAP VERECEGIMIZ BASIT CHAT PRORRAMI
-'''
-#her konusmayi bir degiskene atiyoruz bu sekilde baska yerlerdede kolayca kullanabiliriz.
-#upper fonksiyonunu kullaniyoruz bu sekilde her cevap buyuk harf olarak donuyor ve karsilastirmalarda sorun yasamiyoruz
+# her konusmayi bir degiskene atiyoruz bu sekilde baska yerlerdede kolayca kullanabiliriz.
+# upper fonksiyonunu kullaniyoruz bu sekilde her cevap buyuk harf olarak donuyor ve karsilastirmalarda sorun yasamiyoruz
 ad = input("Merhaba ben 'ROBOFENYX', Peki Sizin Adiniz Nedir?: ").upper()
 adCevap = print('ROBOFENYX: Memnun oldum', ad)
 yas = print('ROBOFENYX:', ad,
             ', Benim yasim 2 dir, peki sizin yasiniz kacdir?: ')
-yasCevap = int(input('Benim yasim ise: ')) # yas cevabini int almamiz lazim o yuzden int kullaniyoruz
-#if statement ile bazi dogrulama cevaplari vermesini sagliyoruz.daha eglenceli oluyor.
+# yas cevabini int almamiz lazim o yuzden int kullaniyoruz
+yasCevap = int(input('Benim yasim ise: '))
+# if statement ile bazi dogrulama cevaplari vermesini sagliyoruz.daha eglenceli oluyor.
 if yasCevap <= 45:
     yasGenc = print('ROBOFENYX: Ne guzel', yasCevap,
                     'yas daha gencliginizin baharindasiniz, Peki memleket nere', ad, 'Bey?')
@@ -112,4 +112,4 @@ if yazilimCevap == yazilimDili:
 else:
     print('Bahsettiginiz', yazilimCevap,
           'yazilim dilini malesef bilmiyorum. Ama onu da ogrenebilirim')
-print("ROBOFENYX: Bence bugunluk bu kadar konusma yeter sanirim, benimle konustugun icin tesekkurler baska zaman yine gorusuruz", ad, ":)")'''
+print("ROBOFENYX: Bence bugunluk bu kadar konusma yeter sanirim, benimle konustugun icin tesekkurler baska zaman yine gorusuruz", ad, ":)")
