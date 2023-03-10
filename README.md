@@ -11,11 +11,9 @@ Dairenin Alani 232 cm2'dir.
 
 
 ## soru 3: Kisinin adini, soyadini, adresini alip alt alta yazdiriniz. Adresin altina adres kadar "*" ekleyiniz.
-### ornek:
-fenyx
-Academy
-Amsterdam
-***
+
+<img width="123" alt="Screenshot 2023-03-10 at 17 50 46" src="https://user-images.githubusercontent.com/48627796/224375111-8961b3cc-1eb7-4220-b0aa-4fac58107552.png">
+
 ----------------------------
 
 
@@ -25,11 +23,8 @@ Amsterdam
 
 ## soru 5: Kullanicidan ismini ve soy ismini alip bir dikdortgenin ortasina yazidiran bir program yaziniz.(Isim ve Soysisim uzunluguna gore dikdortgen buyuyup kuculmelidir.)
 ### ornek:
-I********I
-I                  I
-I  fenyx Academy.  I
-I                  I
-I********I
+
+<img width="168" alt="Screenshot 2023-03-10 at 17 50 31" src="https://user-images.githubusercontent.com/48627796/224375032-a0835ca6-6d9c-4165-b460-72903b11e582.png">
 
 ----------------------------
 ## soru 6 : Kullaniciya en az 6 soru sorup, cevaplara gore yanitlar vereceginiz basit bir chat programi yaziniz.
