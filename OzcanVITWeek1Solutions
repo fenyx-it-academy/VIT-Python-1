@@ -1,0 +1,71 @@
+#SOLUTIONS
+
+#Solution 1
+
+import math
+radius=int(input('What is the radius of the circle?'))
+area=int(math.pi*radius*radius)
+areaofcircle='Area of the Circle m2 '
+print('Area of the Circle:', area, "\n", "-"*len(areaofcircle), sep="")
+
+#Solution 2
+
+name= input('What is your name?')
+surname= input('What is your last name?')
+print('Welcome',surname,name, sep="   ")
+
+#Solution 3
+
+name= input('What is your name?')
+surname= input('What is your last name?')
+address= input('What is your address?')
+print(name,surname,address, sep="\n" )
+print("*"*len(address), sep="")
+
+#Solution 4
+
+seconds= int(input('How many seconds?'))
+hour=seconds//3600
+seconds=seconds%3600
+minutes=seconds//60
+seconds=seconds%60
+print (hour,minutes,seconds, sep = ":", end = "")
+
+#Solution 5
+
+# To get from user name and surname
+name = input("Type your name: ")
+surname = input("Type your surname: ")
+
+# Creating rectangle
+length = len(name) + len(surname) 
+rectangle = "|" + "*" * length*2 + "|\n"
+rectangle += "|" + " " * length*2 + "|\n"
+rectangle += "|" + " " * ((length)//2) + name + " "+ surname
+rectangle += " " * (((length)//2)-1) + "|\n"
+rectangle += "|" + " " * length*2 + "|\n"
+rectangle += "|" + "*" * length*2 + "|\n"
+print(rectangle)
+
+#Solution 6
+
+# We are asking six questions and get the answers with respect to these answers
+
+print("Merhaba, size birkaç soru soracağım. Lütfen dürüst cevaplar verin.")
+name = input("Adınız nedir? ")
+print("Merhaba " + name + "!")
+
+age = input("Kaç yaşındasın? ")
+print("Anladım, " + age + " yaşındasın.")
+
+city = input("Hangi şehirde yaşıyorsunuz? ")
+print("Tamam, " + city + "'da yaşıyorsunuz.")
+
+hobby = input("En sevdiğiniz hobi nedir? ")
+print("Anladım, " + hobby + " hobi olarak seçtiniz.")
+
+food = input("En sevdiğiniz yiyecek nedir? ")
+print("Tamam, " + food + " en sevdiğiniz yiyecek.")
+
+color = input("En sevdiğiniz renk nedir? ")
+print("Anladım, " + color + " en sevdiğiniz renk olarak seçtiniz.")
