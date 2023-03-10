@@ -1,0 +1,71 @@
+## soru 1: Kullanicidan dairenin yaricapini alip dairenin alanini hesaplayiniz. 
+# Dairenin alaninin altini cizecek kadar "-" ekleyen Program yaziniz.
+from math import pi
+
+yaricap= float(input("dairenin yaricapini giriniz"))
+alan=pi*yaricap**2
+print("Dairenin alani: ", alan," cm2 dir.", "\n", "--------------------------------------")#, "-"*len (alan), sep=""
+
+## soru 2: Kisinin adini ve soyadini alip Selamlama hitabi yaziniz. 
+# Yazarken ad ve soyad yer degistirsin ve aralarina 3 adet bosluk ekleyen program yaziniz.
+isim = input("isminizi yaziniz: ")
+soyisim = input("soyisminizi yaziniz: ")
+
+isim, soyisim = soyisim, isim
+
+selamlama = "Merhaba " + isim + "   " + soyisim + "! Vit Projesine Hoşgeldiniz."
+
+print(selamlama)
+
+## soru 3: Kisinin adini, soyadini, adresini alip alt alta yazdiriniz. Adresin altina adres kadar "*" ekleyiniz.
+Ad=("Kara")
+Soyad=("Kartal")
+Adres=("Besiktas")
+print(Ad, "\n", Soyad,"\n", Adres, "\n", "*"*len (Adres), sep="" )
+
+# Kullanicidan Saniye alip gun, saat, dakika ve saniye olarak gosteriniz.
+from math import floor
+
+saniye = int(input("lutfen saniyeyi yaziniz"))
+dakika = saniye / 60
+saat = dakika / 60
+gun = saat / 24
+
+print(floor(gun), "Gun",  floor(saat % 24), "Saat", floor(dakika % 60), "dakika", floor(saniye % 60), "saniye")
+
+## soru 5:kullanicidan Ismini ve soy ismini alip bir dikdortgenin ortasina yazdiran bir program yaziniz.
+# (isim ve soysisim uzunluguna gore dikdortgen buyuyup kuculmelidir)
+isim = input("Lutfen isminizi giriniz")
+soyisim = input("Lutfen soyisminizi giriniz")
+
+genislik = len(isim) + len(soyisim) +5
+
+print(genislik * "*")
+print("*", (genislik-4) * " ", "*")
+print("*", isim, soyisim, "*")
+print("*", (genislik-4) * " ", "*")
+print(genislik * "*")
+
+## soru 6 : Kullaniciya en az 6 soru sorup, cevaplara gore yanitlar vereceginiz basit bir chat programi yaziniz
+print("Merhaba, Ben Kartal Yuvasi Chat programi. Adiniz Nedir?")
+#kullanici sadece ismini soyler
+
+isim=input()
+
+print("Merhaba", isim.title(), "! forma mi, tisort mu, esofman takimi mi almak istersin?")
+
+urun=input()
+
+print(urun.title(), "Cok guzel bir secim!", "Hangi beden giyiyorsunuz?")
+
+beden=input()
+
+print(beden.title(), "bedeniniz ovguyu hak ediyor!", ("Peki hangi renk istersiniz?"))
+
+renk=input()
+
+print(renk.title(), "Ne guzel bir renk!", ("Urununuzde hangi numarayi tercih edersiniz?"))
+
+numara=int(input())
+
+print(numara, "Himmmm, ozel bir numara gibi!", "Urununuz basiliyor... Lutfen bekleyiniz...!")
