@@ -52,12 +52,20 @@ print("Merhaba, Ben Kartal Yuvasi Chat programi. Adiniz Nedir?")
 
 isim=input()
 
-print("Merhaba", isim.title(), "! forma mi tisort mu esofman takimi mi almak istersin?")
+print("Merhaba", isim.title(), "! forma mi, tisort mu, esofman takimi mi almak istersin?")
 
 urun=input()
 
-print(urun.title(), "Cok guzel bir secim ", "Hangi beden giyiyorsunuz")
+print(urun.title(), "Cok guzel bir secim!", "Hangi beden giyiyorsunuz?")
 
 beden=input()
 
-print()
+print(beden.title(), "bedeniniz ovguyu hak ediyor!", ("Peki hangi renk istersiniz?"))
+
+renk=input()
+
+print(renk.title(), "Ne guzel bir renk!", ("Urununuzde hangi numarayi tercih edersiniz?"))
+
+numara=int(input())
+
+print(numara, "Himmmm, ozel bir numara gibi!", "Urununuz basiliyor... Lutfen bekleyiniz...!")
