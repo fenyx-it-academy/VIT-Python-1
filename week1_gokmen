@@ -1,0 +1,82 @@
+#Task 1: Dairenin alanını veren ve mesajın altını çizen program
+
+import math
+r=float(input("Dairenin Yarıçapını gir:"))  #yarıçap verisi istenir
+s=math.pi*r*r                               
+print("Dairenin alanı",s,"cm2 dir.")
+sline=str(s)
+line=len(sline)
+print("-"*(line+24)) #çıktı mesajın altına çizgi çizer. Alanın sonucu artı 24 adet çizgi
+
+#Task 2: Kişinin adını soyadını alıp ekrana önce soyad sonra ad yazsın aralarına 3 adet boşluk bıraksın
+
+name=input("Your name:")
+surname=input("Surname:")
+print("""Hoi, Selam, """,surname,name,sep="   ")
+
+#Task 3: Ekrandan ad,soyad alıp alt alta yazın, adresin altına uzunluğu kadar * işareti ekleyin
+
+
+name=input("Your name:")
+surname=input("surname:")
+address=input("Address:")
+print(name,surname,address,sep="\n") #alınan veri alt alta ekrana yazılır
+print("*"*(len(address)) )  
+
+#Task4: Ekrandan saniye olarak girilip gün,saat,dakika, saniye olarak çıktı alınız.
+
+time=int(input("Insert time in seconds:")) #saniye cinsinden veri istenir
+day=time//86400              #tam gün sayısı hesaplanır   
+hourrem=time%86400           #mod hesabı ile artan saniyeler hesaplanır
+hour=hourrem//3600          #artan saniye içinde tam saatler hesaplanır
+minuterem=hourrem%3600      #mod hesabı ile artan saniyer hesaplanır
+minute=minuterem//60        #artan saniye içinde tam dakikalar hesaplanır
+second=minuterem%60         #geriye kalan kısım artık saniyedir
+print(day,"day",hour,"hour", minute,"minute",second,"seconds")
+
+#Task 5: Ekrandan girilen metnin ebatına göre değişecek şekilde etrafına çerçeve çiziniz.
+
+tekst=input("insert your name or your message:") # veri istenir
+lentekst=len(tekst)                             #verinin uzunluğu hesap edilir
+print("*"*(lentekst+4))                         #ekrana ilk * satırı yazdırılır, girilen isimden 4 karakter fazla olacak şekilde 
+print("*"+" "*(lentekst+4-2)+"*")               #ikinci satıra başa ve sona birer * karakteri 
+print("*"+""*1,tekst,""*1+"*")                  #mesaj metin yazdırılır, başta ve sonda birer boşluk bırakılır   
+print("*"+" "*(lentekst+4-2)+"*")                   
+print("*"*(lentekst+4))
+
+#Kullanıcıya sorular sora basit chat programı
+
+name=input("Selam adın nedir?\n")
+answer1=input("Nasılsın, " + name + " iyi misin?\n")
+answer1=answer1.lower()
+if answer1=="evet":
+    print("Güzel, sevindim?\n")
+elif answer1=="hayır":
+    answer3=input("Yanlış bir zaman anlaşılan! Yani napsak ki fıkra anlatayım mı?\n")
+    answer3=answer3.lower()
+    if answer3=="evet":
+        print("""Bir adam doktora gitmiş. Doktor sormuş:
+                    - Ağrı nerede?
+                    Adam cevap vermiş:
+                    -Doğu Anadolu da
+                    Doktor:
+                    - DEFOL!!!....""")
+        
+    else:
+        print("keyfin yok anlaşılan. Sonra görüşelim") 
+        quit()
+else:
+    print("Evet hayır cevabı ver,adamı hasta etme")
+answer4=int(input("Yaşın nedir "+ name + "?\n"))
+if answer4<35:
+    print("OOO daha yolun yarısına gelmemişin")
+else:
+    print("Yolun yarısı bitmiş.. ")
+answer5=input("Benden tavsiye istermisin?\n")
+answer5=answer5.lower()
+if answer5=="evet":
+    print("Bak " + name + " çok kafaya takmayacaksın, zaten yazılan neyse o olur")
+elif answer5=="hayır":
+    answer5=answer5.lower()
+    print("Hah, çok bilmiş, peki selametle, ben kaçar")
+    quit
