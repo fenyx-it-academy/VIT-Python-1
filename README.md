@@ -1,6 +1,6 @@
 # VIT-Python-1
 
-## soru 1: Kullanicidan dairenin yaricapini alip dairenin alanini hesaplayiniz. Dairenin alainin altini cizecek kadar "-" ekleyen Program yaziniz.
+## soru 1: Kullanicidan dairenin yaricapini alip dairenin alanini hesaplayiniz. Dairenin alainin altini cizecek kadar "-" ekleyen program yaziniz.
 ### ornek:
 Dairenin Alani 232 cm2'dir.
 ---------------------------
@@ -19,11 +19,11 @@ Amsterdam
 ----------------------------
 
 
-## soru 4:Kullanicidan Saniye alip gun, saat, dakika ve saniye olarak gosteriniz.
+## soru 4: Kullanicidan saniye alip gun, saat, dakika ve saniye olarak gosteriniz.
 ----------------------------
 
 
-## soru 5:kullanicidan Ismini ve soy ismini alip bir dikdortgenin ortasina yazidren bir program yaziniz.(isim ve soysisim uzunluguna gore dikdorthen buyuyup kuculmelidir)
+## soru 5: Kullanicidan ismini ve soy ismini alip bir dikdortgenin ortasina yazidiran bir program yaziniz.(Isim ve Soysisim uzunluguna gore dikdortgen buyuyup kuculmelidir.)
 ### ornek:
 I********I
 I                  I
