@@ -1,35 +1,94 @@
-# VIT-Python-1
+#Week1HomeworkAnswer1
 
-## soru 1: Kullanicidan dairenin yaricapini alip dairenin alanini hesaplayiniz. Dairenin alainin altini cizecek kadar "-" ekleyen program yaziniz.
-### ornek:
-Dairenin Alani 232 cm2'dir.
----------------------------
+print("\n","Dairenin Alanını Hesaplama", "\n")
 
+cap=input("Dairenin Çapı: ")
+yaricap=int(cap)/2
+pi=3.14159
+alan=pi*(yaricap*yaricap)
 
-## soru 2: Kisinin adini ve soyadini alip Selamlama hitabi yaziniz. Yazarken ad ve soyad yer degistirsin ve aralarina 3 adet bosluk ekleyen program yaziniz.
----------------------------
+sonuc="Dairenin Alanı "+str(alan)+" cm2 dir"
 
+print("\n", sonuc, "\n", "-"*len(sonuc), sep="")
 
-## soru 3: Kisinin adini, soyadini, adresini alip alt alta yazdiriniz. Adresin altina adres kadar "*" ekleyiniz.
+input()
 
-<img width="123" alt="Screenshot 2023-03-10 at 17 50 46" src="https://user-images.githubusercontent.com/48627796/224375111-8961b3cc-1eb7-4220-b0aa-4fac58107552.png">
+######################
 
-----------------------------
+#Week1HomeworkAnswer2
 
+ad=input("Adınız: ")
+soyad=input("Soyadınız: ")
 
-## soru 4: Kullanicidan saniye alip gun, saat, dakika ve saniye olarak gosteriniz.
-----------------------------
+print("Hoşgeldiniz", soyad, ad, sep=" "*3)
 
+input()
 
-## soru 5: Kullanicidan ismini ve soy ismini alip bir dikdortgenin ortasina yazidiran bir program yaziniz.(Isim ve Soysisim uzunluguna gore dikdortgen buyuyup kuculmelidir.)
-### ornek:
+######################
 
-<img width="168" alt="Screenshot 2023-03-10 at 17 50 31" src="https://user-images.githubusercontent.com/48627796/224375032-a0835ca6-6d9c-4165-b460-72903b11e582.png">
+#Week1HomeworkAnswer3
 
-----------------------------
-## soru 6 : Kullaniciya en az 6 soru sorup, cevaplara gore yanitlar vereceginiz basit bir chat programi yaziniz.
+ad=input("Adınız: ")
+soyad=input("Soyadınız: ")
+adres=input("Adresiniz: ")
 
----------------------------
-NOT: Odevinizin cozumleri onumuzdeki ders gunu (Cumartesi gun sonuna kadar) sizlerle paylasilacaktir. Odevle ilgili tum sorularinizi ders hocamiz Fatih Bey'e sorabilirsiniz. Odevlerinizi Persembe gun sonuna kadar derste anlatildigi gibi GIT uzerinden gondermenizi rica ediyoruz. Git ile ilgili yasadiginiz sorunlari yine ders hocamiza slack uzerinden sorabilirsiniz.
-Hepinize kolay gelsin.
+print("\n", ad, "\n", soyad, "\n", adres, "\n", "*"*len(adres), sep="")
+
+input()
+
+#####################
+
+#Week1HomeworkAnswer4
+
+Baslik=str("SANİYE DÖNÜŞTÜRÜCÜYE HOŞGELDİNİZ")
+print("\n", Baslik, "\n", "-"*len(Baslik), "\n")
+
+Girdi=int(input("Saniye Giriniz:"))
+Gün=Girdi//86400  ## Gün sayısını buluruz.
+Saat=(Girdi%86400)//3600 ## Saat sayısını buluruz.
+Dakika=(Girdi%3600)//60 ## Dakika sayısını buluruz.
+Saniye=Girdi%60 ## Saniye sayısını buluruz.
+
+print("\n", Girdi, "saniye;", Gün, "Gün", Saat, "Saat", Dakika, "Dakika", Saniye, "Saniyedir.","\n" )
+
+######################
+
+#Week1HomeworkAnswer5
+
+#İçine yazılan AdSoyad boyutuna göre değişen dikdörtgen 
+
+AdSoyad=input("Adınızı ve Soyadınızı Giriniz:")
+LenAd=len(AdSoyad)
+
+print("+"*(LenAd+6))
+print("+"+" "*(LenAd+6-2)+"+")
+print("+"+" "*1, AdSoyad, " "*1+"+")
+print("+"+" "*(LenAd+6-2)+"+")
+print("+"*(LenAd+6))
+
+###################
+
+#Week1HomeworkAnswer6
+
+#Diyalog programı
+
+print("\n","HOŞ GELDİNİZ!", "\n")
+print("Açıklamalar:", "\n", "1- Adınızı veya Nickname'inizi istediğiniz bir şey seçebilirsiniz.", "\n", "2- Cevaplar evet ise 'E', hayır is 'H' olmalı.", "\n")
+Adı=input("Adını öğrenebilir miyim?")
+print("\n", "Merhaba", Adı, "iyi misin?", "\n")
+
+Cevap1=input()
+
+if Cevap1=="E":
+    print("İyi olmana sevindim", Adı)
+    
+    
+elif Cevap1=="H":
+    print("\n", "Deprem herkesin psikolojisini etkiledi sanırım.", "\n")
+    Cevap2=input("Bir terapist/psikolog ile görüşmek ister misin?")
+    if Cevap2=="E": 
+        print("\n", "Önerebileceğim alanında başarılı bir arkadaşım var.", "\n", "İletişim bilgileri: \n İnstagram: @PsikologAhmet \n Telefon: +31 1234567890")
+    elif Cevap2=="H":
+        print("\n", "Bir uzmanla konuşmak iyi gelebilirdi ancak tavsiyemi uygulamak zorunda değilsin elbette :)")
+
 
