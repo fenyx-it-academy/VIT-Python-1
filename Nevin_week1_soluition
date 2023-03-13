@@ -38,3 +38,20 @@ print("|",ad,soyad,"|")
 print("|"," "*uzun,"|",)
 print("-"*yatay,sep="")
 cevap6
+#Kullaniciya en az 6 soru sorup, cevaplara gore yanitlar vereceginiz basit bir chat progr
+print("Hosgeldiniz Oncelikle sizi tanimak istiyorum.")
+ad_soyad=input("adiniz - soyadiniz :")
+print("sizinle tanistigima memnun oldum",ad_soyad)
+yas=input("Kac yasindasiniz:")
+print(yas,"omrun en guzel caglari")
+evhay=input("Hayvanlari sever misiniz? :(E/H)").upper()
+if evhay =="E":
+    cinsi=input("Ev hayvaniniz var mi  varsa cinsi ?):")
+    print("Bir",cinsi,"dostunuz var.")
+else:
+    input("Hayvanlardan korkuyormusun?")
+    print("Bende")
+hoby=input("Hobyleriniz?")
+print("Benim hobimde",hoby)
+input("Calisiyor musunuz yoksa ogrencimisiniz? :")
+print("Bu harika")
