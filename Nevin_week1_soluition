@@ -20,11 +20,12 @@ adres=input("Adresinizi giriniz:")
 print(ad,soyad,adres,"*"*len(adres),sep="\n")
 cevap4
 #Girilen saniye degerini saniye,dakika,saat,gun olarak yazdiriyoruz
-saniye=int(input("Saniyeyi giriniz:"))
-dakika=saniye/60
-saat=dakika/60
-gun=saat/24
-print("Girdiginiz saniye: ",saniye,"sn",dakika,"dk",saat,"saat",gun,"gundur.")
+girilen_saniye=int(input("Saniyeyi giriniz:"))
+saniye=girilen_saniye%60
+dakika=(girilen_saniye//60)%60
+saat=(girilen_saniye//60)//60
+gun=saat//24
+print("Girdiginiz saniye: ",girilen_saniye,gun,saat,dakika,saniye,sep=":")
 cevap5
 #Kullanicidan ismini ve soy ismini alip bir dikdortgenin ortasina yazidiriyoruz
 #Isim ve Soysisim uzunluguna gore dikdortgen buyuyup kuculuyor
