@@ -1,5 +1,5 @@
 #ODEV1
-#Kullanicidan yari cap isteyip dairenin alnini hesaplayalim
+#Kullanicidan yari cap isteyip dairenin alanini hesaplayalim
 #Pi sayisini 3 olarak aldim
 
 yaricap=input("Dairenin Yari capini giriniz:")
@@ -22,7 +22,7 @@ print(ad,soyad,adres, "*"* len(adres), sep="\n")
 
 
 #ODEV4
-# Kuulanicidan saniye alip saniye, dakika, saat ve gun olrak yazdiracagiz.
+# Kullanicidan saniye alip saniye, dakika, saat ve gun olarak yazdiracagiz.
 saniye=int(input("Saniyeyi girin:"))
 dakika=int(saniye/60)
 saat=int(dakika/60)
@@ -32,7 +32,7 @@ print(str(gun) + " gun ", str(saat) + " saat ", str(dakika) + " dakika ",str(san
 
 #ODEV5
 #Adimizi ve soyadimizi ayni kullanicidan aldik ve
-# bunlari bir d,kdorgenin icine gelecek sekilde yazdirdik
+# bunlari bir dikdorgenin icine gelecek sekilde yazdirdik
 ad_soyad=input("adinizi ve soyadinizi girin:")
 print("I","*"*(len(ad_soyad)+2),"I",sep="")
 print("I"," "*(len(ad_soyad)),"I")
