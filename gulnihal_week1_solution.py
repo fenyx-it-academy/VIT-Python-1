@@ -25,6 +25,18 @@ adres=input("Adresiniz:")
 print(ad,"\n",soyad,"\n",adres,"\n","*"*len(adres),sep="")
 
 #soru 4
+saniye=int(input("Saniye giriniz:"))
+dakika=saniye//60
+saniye=saniye%60
+saat=dakika//60
+dakika=dakika%60
+gun=saat//24
+saat=saat%24
+
+
+print(gun,saat,dakika,saniye)
+
+#soru 5
 isimSoyisim=input("Isminizi ve soyisminizi giriniz:")
 
 ustAlt="*"*(len(isimSoyisim)+10)
@@ -37,7 +49,6 @@ print("|"," "*int(fark),isimSoyisim," "*int(fark),"|")
 print(yatay)
 print(yatay)
 print(ustAlt)
-#soru 5
 
 #soru 6
 isim=input("Merhaba isminiz ve soyisminiz nedir?")
