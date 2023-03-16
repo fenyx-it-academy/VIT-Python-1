@@ -1,0 +1,74 @@
+#Cevap 1:
+
+yaricap=int(input("Yarıcap: "))
+pi=3
+alan=(yaricap**2)*pi
+print("Alan: ",alan," cm2`dir.",sep="")
+print(len(str(alan))*"-"+"-"*15)
+
+#Cevap 2:
+
+isim=input("isim giriniz: ")
+soy_isim=input("soy isim giriniz: ")
+
+print("Merhaba",soy_isim,isim,sep="   ")
+
+#Cevap 3:
+
+isim=input("isim giriniz: ")
+soy_isim=input("soy giriniz: ")
+adres=input("adres giriniz: ")
+
+print(isim,soy_isim,adres,len(adres)*"*",sep="\n")
+
+#Cevap 4:
+
+saniye=int(input("Saniye giriniz: "))
+dakika=saniye/60
+saat=dakika/60
+gun=saat/24
+
+print("Saniye: ",saniye,"Dakika: ",dakika,"Saat: ",saat,"Gun: ",gun,sep="\n")
+
+#Cevap 5:
+
+isim=input("isim giriniz: ")
+soy_isim=input("soyisim giriniz: ")
+lenght=len(isim+soy_isim)
+isim = input("isim giriniz: ")
+soy_isim = input("soyisim giriniz: ")
+lenght = len(isim+soy_isim)
+
+print((lenght+5)*"*")
+print("|", (lenght+1)*" ", "|")
+print("|", isim, soy_isim, "|")
+print("|", (lenght+1)*" ", "|")
+print((lenght+5)*"*")
+
+      
+#Cevap 6:
+
+isim_sor = input(
+    'Merhaba ben "Python Chat Programi" senin adin nedir?\n->>   ')
+print("Merhaba", isim_sor, "kac yasindasin?\n->>   ", end="")
+
+yas_sor = input()
+print("Cok guzel..", yas_sor,
+      "yasinda olmak heyecan verici olmali..\nHollanda'ya hangi yil geldin?\n->>   ", end="")
+
+yil_sor = input()
+print(2023-int(yil_sor), "yildir Hollandada nerede ikamet ediyorsun?\n->>   ", end="")
+
+yer_sor = input()
+print("Vaayy ", 2023-int(yil_sor), "yildir", yer_sor,
+      "'da guzel vakit gecirmis olmalisin", isim_sor + ".")
+
+brans_sor = input(
+    "Sonunda VIT projesine katildin. Tebrik ederim.\nIleride hangi bransta calismak istersin?\n--> ")
+print(brans_sor, "guzel secim", isim_sor+".")
+
+puan_sor = input(
+    "Bu chat programina kac puan vermek istersin?\n--> ")
+print(puan_sor, "puan icin tesekkur ederim", isim_sor + ". Sana",
+      yer_sor, "'da ki hayatinda basarilar dilerim..")
+
