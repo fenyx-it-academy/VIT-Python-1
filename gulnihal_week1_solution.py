@@ -13,7 +13,17 @@ cikti= "Dairenin alani"+" "+str(daireninAlani)+" "+"cm2dir."
 print(cikti,"\n", "-"*len(cikti), sep="")
 
 #soru 2
+ad= input("Adiniz:")
+soyad= input("Soyadiniz:")
+
+print("Merhaba",soyad,"   ",ad,"!")
 #soru 3
+ad=input("Adiniz:")
+soyad=input("Soyadiniz:")
+adres=input("Adresiniz:")
+
+print(ad,"\n",soyad,"\n",adres,"\n","*"*len(adres),sep="")
+
 #soru 4
 isimSoyisim=input("Isminizi ve soyisminizi giriniz:")
 
@@ -27,6 +37,22 @@ print("|"," "*int(fark),isimSoyisim," "*int(fark),"|")
 print(yatay)
 print(yatay)
 print(ustAlt)
+#soru 5
+
+#soru 6
+isim=input("Merhaba isminiz ve soyisminiz nedir?")
+print("Merhaba",isim,"!","\n","Uygulamamiza hosgeldin!",sep="")
+yas=input("Lutfen yasini gir:")
+print(yas,"yasinda olmak cok guzeldir.")
+yemek=input("En sevdigin yemek ne?")
+print("Bu ne tesaduf!!! Benim de en sevdigim yemek",yemek,".")
+okul=input("Nereden mezunsun?")
+print("Bir arkadasim daha var senin gibi",okul,"dan mezun.")
+ikamet=input("Nerede oturuyorsun?")
+print(ikamet,"in havasini cok severim. Cok sanslisin.")
+sarkici=input("En sevdigin sarkici kim?")
+print("Bir defa",sarkici,"nin konserine gitmistim. Cok keyifliydi.")
+
 
 
 
