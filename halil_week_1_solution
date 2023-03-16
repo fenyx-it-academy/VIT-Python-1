@@ -35,15 +35,16 @@ print("Saniye: ",saniye,"Dakika: ",dakika,"Saat: ",saat,"Gun: ",gun,sep="\n")
 isim=input("isim giriniz: ")
 soy_isim=input("soyisim giriniz: ")
 lenght=len(isim+soy_isim)
-print("|", (lenght+1)*"* ", "|", "\n",
-      
-      "|", (lenght+1)*"  ", "|", "\n",
-      
-      "|", lenght//2*" ", isim, " ", soy_isim, lenght//2*" ", " |", "\n",
-      
-      "|", (lenght+1)*"  ", "|", "\n",
-      
-      "|", (lenght+1)*"* ", sep="", end="|")
+isim = input("isim giriniz: ")
+soy_isim = input("soyisim giriniz: ")
+lenght = len(isim+soy_isim)
+
+print((lenght+5)*"*")
+print("|", (lenght+1)*" ", "|")
+print("|", isim, soy_isim, "|")
+print("|", (lenght+1)*" ", "|")
+print((lenght+5)*"*")
+
       
 #Cevap 6:
 
