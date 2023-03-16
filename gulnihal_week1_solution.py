@@ -13,5 +13,20 @@ cikti= "Dairenin alani"+" "+str(daireninAlani)+" "+"cm2dir."
 print(cikti,"\n", "-"*len(cikti), sep="")
 
 #soru 2
+#soru 3
+#soru 4
+isimSoyisim=input("Isminizi ve soyisminizi giriniz:")
+
+ustAlt="*"*(len(isimSoyisim)+10)
+print(ustAlt)
+yatay= "|"+" "*(len(isimSoyisim)+8)+"|"
+print(yatay)
+print(yatay)
+fark=((len(ustAlt)-len(isimSoyisim))/2)-3
+print("|"," "*int(fark),isimSoyisim," "*int(fark),"|")
+print(yatay)
+print(yatay)
+print(ustAlt)
+
 
 
