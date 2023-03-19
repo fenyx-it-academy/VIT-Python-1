@@ -1,0 +1,105 @@
+"""
+#Soru 1: Kullanicidan dairenin yaricapini alip dairenin alanini hesaplayiniz.
+#  Dairenin alainin altini cizecek kadar "-" ekleyen program yaziniz.
+
+r = float(input("Yaricap giriniz  : "))
+pi = 3.14
+alan = pi * (r**2)
+sonuc=str(alan)
+print ("Yaricapi :" , r ,  " cm olan dairenin alani ","\n", sonuc," cm'dir.", "\n","-"*len(sonuc),sep="")
+
+
+
+
+#soru 2: Kisinin adini ve soyadini alip Selamlama hitabi yaziniz. Yazarken ad ve soyad yer degistirsin ve
+        aralarina 3 adet bosluk ekleyen program yaziniz.
+
+name= input("Lutfen adinizi yaziniz")
+surname=input("Lutfen soyadinizi yaziniz")
+print(" Sayin",surname,"   ",name,"Fenyx Akakedemi'deki IT egitimine;\n HOS GELDINIZ.")
+yeni tarz
+ad = input("Adınızı giriniz. :")
+soyad = input("Soyadınız giriniz.")
+
+print("Merhaba", end=" ")
+print(soyad, ad, sep = "***")
+
+
+
+#soru 3: Kisinin adini, soyadini, adresini alip alt alta yazdiriniz. Adresin altina adres kadar "*" ekleyiniz.
+name= input("Lutfen adinizi yaziniz")
+surname = input("Lutfen soyadinizi yaziniz")
+address = input("Lutfen adresinizi yaziniz")
+print (name,surname,address,"*"*len(address), sep="\n")
+
+#soru 4: Kullanicidan saniye alip gun, saat, dakika ve saniye olarak gosteriniz.
+time= int(input("Lutfen saniye yaziniz :"))
+
+second=time%60
+
+hour=(time//60)//60%24
+minuten=(time//60)%60
+day=time/86400
+t=time
+m=int(minuten)
+h=int(hour)
+d=int(day)
+s=second
+print("*",t,"* Saniye tam olarak :",d,"gun",h,"saat",m,"dakika ve",s,"saniyedir")
+print(d,h,m,s,sep=":")
+
+#soru 4: Kullanicidan saniye alip gun, saat, dakika ve saniye olarak gosteriniz.
+second= int(input("Lutfen saniye yaziniz"))
+minuten=second/60
+hour=minuten/60
+day=hour/24
+print(second,"saniye",day,"gun",hour,"saat",minuten,"dakika ve",second,"saniyedir")
+
+
+
+#soru 5: Kullanicidan ismini ve soy ismini alip bir dikdortgenin ortasina yazidiran bir program yaziniz.
+# (Isim ve Soysisim uzunluguna gore dikdortgen buyuyup kuculmelidir.)
+
+name2= input("Lutfen adinizi ve soyadinizi yaziniz   ")
+print ("_"*len(name2),"_","_","\n","|"," "*len(name2),"|","\n","|", name2,"|","\n","|","_"*len(name2),"|", sep="")
+
+
+#soru 6 : Kullaniciya en az 6 soru sorup, cevaplara gore yanitlar vereceginiz basit bir chat programi yaziniz.
+print("VIT Editor")
+soru1= input(" Merhaba VIT projesine hosgeldiniz.\n Lutfen ad ve soyadinizi yazin?  ")
+print(" Ad ve Soyadiniz kaydediliyor....")
+print("VIT Editor")
+print(" Sayin ",soru1 )
+soru2=input(" Lutfen ikamet ettiginiz sehir adini yaziniz?   ")
+print(" Ikamet adresiniz",soru2,"olarak kaydediliyor.....")
+print("VIT Editor")
+print(" Sayin ",soru1 )
+soru3=input(" Lutfen telefon numaranizi yaziniz?  ")
+print("",soru3 ,"Numarali telefon kaydedilyor.... ")
+print("VIT Editor")
+print(" Sayin ",soru1 )
+soru4=input(" IT egimitiminiz var mi?  ")
+print("",soru4 , "Cevap kaydediliyor....")
+print("VIT Editor")
+print(" Sayin ",soru1 )
+soru5=input(" Kac yasindasiniz? ")
+print(" Yasiniz ",soru5,"kaydediliyor....")
+print("VIT Editor")
+print(" Sayin ",soru1 )
+soru6=input(" Suanda bir firmada calisiyor mususnuz? ")
+ster="12345678910"
+print("VIT Editor","\n","Sayin",soru1,"<>Lutfen tablodaki bilgilernizi kontrol ediniz!<>")
+print("\n","Katilimci Bilgileri","\n","*"*len(ster),"\n","\n", "Sayin     : ",soru1 ,"\n","Adres     :"," ",soru2,"\n",
+"Tel.No    :"," ",soru3,"\n","IT Gecmisi:"," ",soru4,"\n","Yasiniz   :"," ",soru5,"\n","Is Durumu :"," ",soru6,"\n","\n",
+"*"*len(ster),sep="")
+print("Bilgileriniz dogru ise \"gonder\" butonuna basiniz.")
+
+
+
+
+
+
+
+
+
+"""
