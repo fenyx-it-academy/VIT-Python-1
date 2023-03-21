@@ -1,35 +1,79 @@
-# VIT-Python-1
+#ODEV1
+#Kullanicidan yari cap isteyip dairenin alanini hesaplayalim
+#Pi sayisini 3 olarak aldim
 
-## soru 1: Kullanicidan dairenin yaricapini alip dairenin alanini hesaplayiniz. Dairenin alainin altini cizecek kadar "-" ekleyen program yaziniz.
-### ornek:
-Dairenin Alani 232 cm2'dir.
----------------------------
-
-
-## soru 2: Kisinin adini ve soyadini alip Selamlama hitabi yaziniz. Yazarken ad ve soyad yer degistirsin ve aralarina 3 adet bosluk ekleyen program yaziniz.
----------------------------
+yaricap=input("Dairenin Yari capini giriniz:")
+Alan= str(int(3 * int(yaricap) * int(yaricap)))
+print("Dairenin alani " + str (Alan) + " cm2 ")
+print("-" *(20 + len(Alan)))
 
 
-## soru 3: Kisinin adini, soyadini, adresini alip alt alta yazdiriniz. Adresin altina adres kadar "*" ekleyiniz.
-
-<img width="123" alt="Screenshot 2023-03-10 at 17 50 46" src="https://user-images.githubusercontent.com/48627796/224375111-8961b3cc-1eb7-4220-b0aa-4fac58107552.png">
-
-----------------------------
-
-
-## soru 4: Kullanicidan saniye alip gun, saat, dakika ve saniye olarak gosteriniz.
-----------------------------
+#ODEV2
+Adi=input("Adiniz Nedir?")
+Soyadi=input("Soyadiniz Nedir?")
+print("Merhaba", Soyadi + "   " +Adi)
 
 
-## soru 5: Kullanicidan ismini ve soy ismini alip bir dikdortgenin ortasina yazidiran bir program yaziniz.(Isim ve Soysisim uzunluguna gore dikdortgen buyuyup kuculmelidir.)
-### ornek:
+#ODEV3
+ad=input("Kisinin adi:")
+soyad=input("Kisinin Soyadi:")
+adres=input("Kisinin adresi:")
+print(ad,soyad,adres, "*"* len(adres), sep="\n")
 
-<img width="168" alt="Screenshot 2023-03-10 at 17 50 31" src="https://user-images.githubusercontent.com/48627796/224375032-a0835ca6-6d9c-4165-b460-72903b11e582.png">
 
-----------------------------
-## soru 6 : Kullaniciya en az 6 soru sorup, cevaplara gore yanitlar vereceginiz basit bir chat programi yaziniz.
+#ODEV4
+# Kullanicidan saniye alip saniye, dakika, saat ve gun olarak yazdiracagiz.
+saniye=int(input("Saniyeyi girin:"))
+dakika=int(saniye/60)
+saat=int(dakika/60)
+gun=int(saat/24)
+print(str(gun) + " gun ", str(saat) + " saat ", str(dakika) + " dakika ",str(saniye) + " saniye ", sep="\n")
 
----------------------------
-NOT: Odevinizin cozumleri onumuzdeki ders gunu (Cumartesi gun sonuna kadar) sizlerle paylasilacaktir. Odevle ilgili tum sorularinizi ders hocamiz Fatih Bey'e sorabilirsiniz. Odevlerinizi Persembe gun sonuna kadar derste anlatildigi gibi GIT uzerinden gondermenizi rica ediyoruz. Git ile ilgili yasadiginiz sorunlari yine ders hocamiza slack uzerinden sorabilirsiniz.
-Hepinize kolay gelsin.
+
+#ODEV5
+#Adimizi ve soyadimizi ayni kullanicidan aldik ve
+# bunlari bir dikdorgenin icine gelecek sekilde yazdirdik
+ad_soyad=input("adinizi ve soyadinizi girin:")
+print("I","*"*(len(ad_soyad)+2),"I",sep="")
+print("I"," "*(len(ad_soyad)),"I")
+print("I",ad_soyad,"I")
+print("I"," "*(len(ad_soyad)),"I")
+print("I","*"*(len(ad_soyad)+2),"I",sep="")
+
+
+#ODEV6
+#Kisa bir sohbet konusmasi yazacagim. Sordugum sorulara uygun cevap almak istiyorum.
+ad=input("Merhaba, adin ne?",)
+print("Sana da merhaba " +ad+ ",benim adim da Ali.")
+yas=input("Kac yasindasin " +ad+ "?")
+print("Sanki daha yasli gibisin"+"!!!")
+memleket=input(ad+" memleket neresi?")
+print("Ooooooo " + memleket + " mi," + " orayi iyi bilirim" +  ". Birkac ay orada yasadim.")
+ev=input(ad+ " simdi nerede oturuyorsun?")
+print( ev + " demek. Orayi hic gormedim ama " + " guzel bir yer oldugunu dusunuyorum.")
+yil=input("Kac yildir orada oturuyorsun?")
+print(yil+ " yil" + " bence baya uzun bir zaman.")
+hobi=input("Hobilerin neler?")
+print(hobi + " bunlar eglenceli ve guzel hobiler. Seni tebrik ederim.")
+print("Benden bir istegin var mi "+ ad + "? Benim gitmem gerekiyor. Kendine iyi bak!!!")
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
 
